@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WhereAmI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ycU-iq-dC7">
+                                <rect key="frame" x="20" y="44" width="374" height="513.5"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOx-kw-BQ7">
+                                <rect key="frame" x="20" y="577.5" width="374" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjm-HP-bnk">
+                                <rect key="frame" x="20" y="649" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82Q-en-rk8">
+                                <rect key="frame" x="154" y="817" width="106" height="31"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Where am I?" cornerStyle="small">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.82785679138812829" green="0.76278932363481466" blue="0.67755859471195323" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="updateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WqW-mE-5IL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.58719084434902546" green="0.47343032893000886" blue="0.35533998201938072" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="82Q-en-rk8" firstAttribute="top" secondItem="tjm-HP-bnk" secondAttribute="bottom" constant="147" id="5Xa-q0-edv"/>
+                            <constraint firstItem="ycU-iq-dC7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7JJ-Hb-ICK"/>
+                            <constraint firstItem="82Q-en-rk8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="154" id="8g7-uk-zWK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tjm-HP-bnk" secondAttribute="trailing" constant="20" id="9rc-oL-uOz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="82Q-en-rk8" secondAttribute="bottom" constant="14" id="Hfu-NO-IHR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="82Q-en-rk8" secondAttribute="trailing" constant="154" id="Kt1-sG-fuw"/>
+                            <constraint firstItem="BOx-kw-BQ7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="LTU-bw-med"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BOx-kw-BQ7" secondAttribute="trailing" constant="20" id="MO3-Oy-NCz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ycU-iq-dC7" secondAttribute="trailing" constant="20" id="dCc-8k-Cyd"/>
+                            <constraint firstItem="ycU-iq-dC7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ijC-QA-IFM"/>
+                            <constraint firstItem="tjm-HP-bnk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="umR-1Y-jKt"/>
+                            <constraint firstItem="BOx-kw-BQ7" firstAttribute="top" secondItem="ycU-iq-dC7" secondAttribute="bottom" constant="20" id="vQF-BM-ojZ"/>
+                            <constraint firstItem="tjm-HP-bnk" firstAttribute="top" secondItem="BOx-kw-BQ7" secondAttribute="bottom" constant="40" id="yUy-hE-y96"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="jokingLabel" destination="BOx-kw-BQ7" id="4W6-gY-zmB"/>
+                        <outlet property="locationLabel" destination="tjm-HP-bnk" id="7Bu-LP-3nd"/>
+                        <outlet property="mapView" destination="ycU-iq-dC7" id="V4f-6P-YZY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="120.53571428571428"/>
+        </scene>
+    </scenes>
+</document>
