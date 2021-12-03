@@ -16,22 +16,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ycU-iq-dC7">
-                                <rect key="frame" x="20" y="44" width="374" height="513.5"/>
+                                <rect key="frame" x="20" y="44" width="374" height="522"/>
                             </mapView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOx-kw-BQ7">
-                                <rect key="frame" x="20" y="577.5" width="374" height="31.5"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here's your location, hope it helps 🤡" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOx-kw-BQ7">
+                                <rect key="frame" x="20" y="586" width="374" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="textColor" red="0.82785679140000001" green="0.76278932359999996" blue="0.67755859470000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjm-HP-bnk">
-                                <rect key="frame" x="20" y="649" width="374" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjm-HP-bnk">
+                                <rect key="frame" x="20" y="650" width="374" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="QOh-qu-epY"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82Q-en-rk8">
-                                <rect key="frame" x="154" y="817" width="106" height="31"/>
+                                <rect key="frame" x="123" y="817" width="169" height="31"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Where am I?" cornerStyle="small">
@@ -48,14 +51,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.58719084434902546" green="0.47343032893000886" blue="0.35533998201938072" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="82Q-en-rk8" firstAttribute="top" secondItem="tjm-HP-bnk" secondAttribute="bottom" constant="147" id="5Xa-q0-edv"/>
                             <constraint firstItem="ycU-iq-dC7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7JJ-Hb-ICK"/>
-                            <constraint firstItem="82Q-en-rk8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="154" id="8g7-uk-zWK"/>
+                            <constraint firstItem="82Q-en-rk8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="123" id="8g7-uk-zWK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tjm-HP-bnk" secondAttribute="trailing" constant="20" id="9rc-oL-uOz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="82Q-en-rk8" secondAttribute="bottom" constant="14" id="Hfu-NO-IHR"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="82Q-en-rk8" secondAttribute="trailing" constant="154" id="Kt1-sG-fuw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="82Q-en-rk8" secondAttribute="trailing" constant="122" id="Kt1-sG-fuw"/>
                             <constraint firstItem="BOx-kw-BQ7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="LTU-bw-med"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BOx-kw-BQ7" secondAttribute="trailing" constant="20" id="MO3-Oy-NCz"/>
+                            <constraint firstItem="82Q-en-rk8" firstAttribute="top" secondItem="tjm-HP-bnk" secondAttribute="bottom" constant="52" id="d8F-7U-CqG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ycU-iq-dC7" secondAttribute="trailing" constant="20" id="dCc-8k-Cyd"/>
                             <constraint firstItem="ycU-iq-dC7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ijC-QA-IFM"/>
                             <constraint firstItem="tjm-HP-bnk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="umR-1Y-jKt"/>
